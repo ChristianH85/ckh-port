@@ -14,8 +14,7 @@ function Home() {
             setP('I love a good challenge and am passioniate about learning. My best skill is arguably my creative ability to problem solve. Currently, I am working as a Teaching Assistant in the Full-Stack Coding Bootcamp at UT Austin. There I assit in instructing a variety of adult learners in learning modern Full Stack Web Development, particularily the M.E.R.N stack')
             setImg(drip)
         }else{
-            fetch('http://quotes.stormconsultancy.co.uk/random.json').then(response => response.json()).then(data => setP(data))
-            // setP('Hello World')
+            fetch('https://quotes.stormconsultancy.co.uk/random.json').then(response => response.json()).then(data => setP(data))
             setImg(pensive)
         }
     }
