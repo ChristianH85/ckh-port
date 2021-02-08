@@ -3,6 +3,9 @@ import { Card, Col, Row } from "react-materialize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faNode} from "@fortawesome/free-brands-svg-icons";
+import { faJsSquare, faHtml5, faCss3Alt, faBootstrap, faYarn, faNpm, faReact} from "@fortawesome/free-brands-svg-icons";
 import drip from '../images/drip.jpg'
 import pensive from '../images/pensive.jpg'
 function Home() {
@@ -14,7 +17,6 @@ function Home() {
             setP('I love a good challenge and am passioniate about learning. My best skill is arguably my creative ability to problem solve. Currently, I am working as a Teaching Assistant in the Full-Stack Coding Bootcamp at UT Austin. There I assit in instructing a variety of adult learners in learning modern Full Stack Web Development, particularily the M.E.R.N stack')
             setImg(drip)
         }else{
-            fetch('https://quotes.stormconsultancy.co.uk/random.json').then(response => response.json()).then(data => setP(data))
             setImg(pensive)
         }
     }
@@ -37,8 +39,18 @@ function Home() {
             <hr />
             <Row >
               <Col s={12} m={12} id="intro">
-                <div>
-  {pText.author?<span><h5>{pText.author}:</h5><p>{pText.quote}</p><hr/><p>Random quotes provided by stormconsultancy.co.uk API</p></span>:<p>{pText}</p>}
+                <div>  
+                {img===pensive?<Row>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faReact} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faNode} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faJsSquare} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faHtml5} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faCss3Alt} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faYarn} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faNpm} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faBootstrap} /></Col>
+                  <Col s={3}><FontAwesomeIcon id="bIcons" icon={faDatabase} /></Col>
+                  </Row>:<p>{pText}</p>}
                 </div>
               </Col>
             </Row>
