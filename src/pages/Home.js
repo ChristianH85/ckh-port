@@ -6,7 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import drip from '../images/drip.jpg'
 import pensive from '../images/pensive.jpg'
 function Home() {
-    const [img, setImg]=useState("https://scontent.fric1-2.fna.fbcdn.net/v/t1.0-9/118957110_10106172168082637_2059264303994161233_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=5cSXTBa8eCwAX9hRkY3&_nc_ht=scontent.fric1-2.fna&oh=d2d50ebebbc288018f81b748f8b1ae06&oe=6008FB54")
+    const [img, setImg]=useState(drip)
     const [pText, setP]= useState('I love a good challenge and am passioniate about learning. My best skill is arguably my creative ability to problem solve. Currently, I am working as a Teaching Assistant in the Full-Stack Coding Bootcamp at UT Austin. There I assit in instructing a variety of adult learners in learning modern Full Stack Web Development, particularily the M.E.R.N stack')
 
     const handleClick=()=>{
@@ -30,7 +30,7 @@ function Home() {
                   id="avatar"
                   src={img}
                   alt=""
-                  class="circle responsive-img"
+                  className="circle responsive-img"
                   onClick={handleClick}
                 />
               </Col>
@@ -49,13 +49,11 @@ function Home() {
                   <a href='https://github.com/ChristianH85'>
                   <FontAwesomeIcon id="bIcons" icon={faGithub} />
                   </a>
-                {/* <FontAwesomeIcon id="bIcons" icon={faGithub} href='https://github.com/ChristianH85'/> */}
               </Col>
               <Col s={4} offset="s2">
               <a href='https://www.linkedin.com/in/christian-henry5/'>
               <FontAwesomeIcon id="bIcons" icon={faLinkedin}/>
               </a>
-                {/* <FontAwesomeIcon id="bIcons" icon={faLinkedin}/> */}
               </Col>
             </Row>
           </Card>

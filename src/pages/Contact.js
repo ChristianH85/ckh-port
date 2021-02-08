@@ -29,7 +29,6 @@ function Contact() {
                     <br/>
                     <label>Message:</label>
                     <textarea id='message' name='message' onChange={handleInput} value={message}></textarea>
-                    {/* <Button id='mail' className='mailto' href="mailto:chenry5724@gmail.com">Send</Button> */}
                     <Mail label="Send E-Mail" mailto={`mailto:chenry5724@gmail.com?subject=${subject}&body=${message}`}/>
                     <hr/>
                     <Row id="iconR">
