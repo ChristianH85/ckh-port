@@ -51,7 +51,7 @@ body::-webkit-scrollbar-track {
   padding:.75em 2em .5em 2em;
   border-radius:8px;
   border:1px inset #3d3424ee;
-  max-height:30vh;
+  max-height:20vh;
   overflow: auto;
 }
 #intro::-webkit-scrollbar-track {
@@ -124,3 +124,7 @@ label{
   width:100%;
 }
 /* flip transition */
+.click{
+  color: rgb(247, 246, 242);
+  font-size:.7em;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Col, Row } from "react-materialize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +11,7 @@ import pensive from '../images/pensive.jpg'
 function Home() {
     const [img, setImg]=useState(drip)
     const [pText, setP]= useState('I love a good challenge and am passioniate about learning. My best skill is arguably my creative ability to problem solve. Currently, I am working as a Teaching Assistant in the Full-Stack Coding Bootcamp at UT Austin. There I assit in instructing a variety of adult learners in learning modern Full Stack Web Development, particularily the M.E.R.N stack')
-
+  
     const handleClick=()=>{
         if(img === pensive){
             setP('I love a good challenge and am passioniate about learning. My best skill is arguably my creative ability to problem solve. Currently, I am working as a Teaching Assistant in the Full-Stack Coding Bootcamp at UT Austin. There I assit in instructing a variety of adult learners in learning modern Full Stack Web Development, particularily the M.E.R.N stack')
@@ -35,6 +35,11 @@ function Home() {
                   onClick={handleClick}
                 />
               </Col>
+            </Row>
+            <Row>
+              <Col s={12} >
+              </Col>
+              <p className="click center-align" onClick={handleClick}>Click Image for More</p>
             </Row>
             <hr />
             <Row >
