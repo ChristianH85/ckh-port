@@ -1,34 +1,14 @@
-import React from "react";
-import { Card, Col, Row, Icon, CardTitle } from "react-materialize";
-import projects from '../projects'
+import React,{lazy,Suspense} from "react";
+import {Row} from 'react-materialize'
+const Projects = lazy(() => import('../components/Projects'));
 function Portfolio() {
-
+  const renderLoader = () => <p>Loading</p>;
   return (
     <div>
       <Row>
-            {projects.map((data,i)=>{
-                return(
-                <Col s={12} m={4}  key={data.name}>
-                    <Card 
-                    actions={[
-                      <a key={i} href={data.live}>
-                        Live Link
-                      </a>,
-                      <a key={i+1} href={data.github}>
-                        Github
-                      </a>
-                    ]}
-                    closeIcon={<Icon>close</Icon>}
-                    header={
-                      <CardTitle image={data.img} loading="lazy">
-                        {data.name}
-                      </CardTitle>
-                    }
-                    revealIcon={<Icon>more_vert</Icon>}
-                  >
-                  </Card>
-                </Col>)
-            })}
+        <Suspense fallback={renderLoader()}>
+          <Projects/>
+        </Suspense> 
       </Row>
     </div>
   );
