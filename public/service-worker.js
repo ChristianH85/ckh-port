@@ -5,6 +5,8 @@ const FILES_TO_CACHE = [
   "/index.html",
   "/favicon.ico",
   "/manifest.webmanifest",
+  "/me192.png",
+  "/me512.png",
   "../src/images/drip.jpg",
   "../src/images/bandz.png",
   "../src/images/pensive.jpg",
