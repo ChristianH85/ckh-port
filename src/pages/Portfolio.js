@@ -20,7 +20,7 @@ function Portfolio() {
                     ]}
                     closeIcon={<Icon>close</Icon>}
                     header={
-                      <CardTitle image={data.img}>
+                      <CardTitle image={data.img} loading="lazy">
                         {data.name}
                       </CardTitle>
                     }
