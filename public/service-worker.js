@@ -7,7 +7,7 @@ const FILES_TO_CACHE = [
   "/manifest.webmanifest",
   "/me192.png",
   "/me512.png",
-  "../src/images/drip.jpg",
+  "../src/images/suit.jpg",
   "../src/images/bandz.png",
   "../src/images/pensive.jpg",
   "../src/images/imgup.png",
