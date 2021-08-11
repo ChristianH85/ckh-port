@@ -1,13 +1,13 @@
 import bandz from './images/bandz.png'
 import jg from './images/jg.png'
 import imgup from './images/imgup.png'
-import qvote from './images/qvote.gif'
+import quick_votes from './images/quick_votes.gif'
 const projects=[
     {name:'Quick Votes',
     live:'http://instant-democracy.herokuapp.com/',
     github:'Private Repo',
     description: 'MERN and socket application for creating and recording votes ',
-    img:qvote
+    img:quick_votes
     },
     {name:'ImgUp',
     live: 'https://imgupexample.herokuapp.com/',
