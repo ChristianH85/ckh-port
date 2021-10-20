@@ -14,7 +14,7 @@ function Home() {
   
     const handleClick=()=>{
         if(img === pensive){
-            setP('I love a good challenge and am passioniate about learning. My best skill is arguably my creative ability to problem solve. Currently, I am working as a Teaching Assistant in the Full-Stack Coding Bootcamp at UT Austin. There I assit in instructing a variety of adult learners in learning modern Full Stack Web Development, particularily the M.E.R.N stack')
+            setP('I love a good challenge and am passioniate about learning. My best skill is arguably my creative ability to problem solve. Currently, I am working as a Teaching Assistant in the Full-Stack Coding Bootcamp at UT Austin. There I assist in instructing a variety of adult learners in learning modern Full Stack Web Development, particularily the M.E.R.N stack')
             setImg(suit)
         }else{
             setImg(pensive)

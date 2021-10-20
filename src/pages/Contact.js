@@ -33,10 +33,10 @@ function Contact() {
                     <hr/>
                     <Row id="iconR">
                         <Col s={4} offset='s2'>
-                        <FontAwesomeIcon id='bIcons' icon={faGithub} />
+                        <a href='https://github.com/ChristianH85'><FontAwesomeIcon id='bIcons' icon={faGithub} /></a>
                         </Col>
                         <Col s={4} offset='s2'>
-                        <FontAwesomeIcon id='bIcons' icon={faLinkedin} />
+                        <a href='https://www.linkedin.com/in/christian-henry5/'><FontAwesomeIcon id='bIcons' icon={faLinkedin} /></a>
                         </Col>
                     </Row>
                 </form>

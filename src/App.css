@@ -79,6 +79,19 @@ label{
   font-weight:600;
   
 }
+.proCard{
+  border-radius: 20px!important;
+  /* height:30vh; */
+}
+.card-action{
+  border-radius: 20px!important;
+}
+.card-content{
+  overflow: auto;
+}
+.cardImg{
+  width:100%;
+}
 #subject{
   background-color:white;
   height:1.5em;
