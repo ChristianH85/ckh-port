@@ -13,7 +13,7 @@ const projects=[
     live:'http://instant-democracy.herokuapp.com/',
     github:'Private Repo',
     description: 'MERN and socket application for creating and recording votes ',
-    img:qvote
+    img:quick_votes
     },
     {name:'Solar Charts',
     live:'https://solar-charts-christianh85.vercel.app/',
